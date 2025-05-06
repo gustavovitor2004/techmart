@@ -10,7 +10,12 @@ TechMart é uma plataforma de e-commerce para venda de produtos de tecnologia (s
 4. Gestão de pedidos (histórico e status)  
 5. Avaliações e comentários de produtos  
 6. Sistema de recomendações (itens aleatórios como protótipo)  
-7. Painel administrativo com CRUD de produtos e atualização de status de pedidos  
+7. Painel administrativo com CRUD de produtos e atualização de status de pedidos
+
+## Pré-requisitos
+- Node.js ≥ 14  
+- npm ≥ 6
+- Extensão Live Server
 
 ## Tecnologias e Ferramentas
 - **Backend**: Node.js, Express.js  
@@ -26,10 +31,11 @@ TechMart/
 ```
 
 ## Instalação e Execução
-
-2. **Instalar dependências e iniciar**  
-   cd techmart-main\backend
-   npm start
+1. Baixe o arquivo .rar e extraia o programa. Clique com o botao direito na pasta descompactada e abra com o VS CODE
+2. Abra o terminal do VS e digite os seguintes comandos:  
+- cd techmart-main\backend
+- npm start
+4. Você verá a mensagem: "Backend rodando em http://localhost:3000". Após isso va na pasta do frontend e clique com o botao direito no "index.html" e abra com o Live Server.
 
 Automaticamente instala as dependências e deixa pronto para utilizar.
 
