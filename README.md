@@ -27,7 +27,8 @@ TechMart/
 
 ## Instalação e Execução
 
-2. **Instalar dependências e iniciar**  
+2. **Instalar dependências e iniciar**
+   cd backend
    npm start
 
 Automaticamente instala as dependências e deixa pronto para utilizar.
