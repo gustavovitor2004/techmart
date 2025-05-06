@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TechMart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>TechMart</h1>
+  <nav>
+    <a href="index.html">Loja</a> |
+    <a href="admin.html">Admin</a>
+  </nav>
+
+  <!-- Filtros -->
+  <section id="filters">
+    <select id="categoryFilter"><option value="">Todas as Categorias</option></select>
+    <select id="brandFilter"><option value="">Todas as Marcas</option></select>
+    <input type="number" id="minPrice" placeholder="Preço mínimo">
+    <input type="number" id="maxPrice" placeholder="Preço máximo">
+    <button id="applyFilters">Filtrar</button>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="catalog"></section>
+
+  <!-- Carrinho -->
+  <section id="cart">
+    <h2>Carrinho</h2>
+    <div id="cartItems"></div>
+    <div id="cartTotal"></div>
+    <button id="checkout">Finalizar Compra</button>
+  </section>
+
+  <!-- Pedidos -->
+  <section id="orders">
+    <h2>Pedidos</h2>
+    <div id="orderList"></div>
+  </section>
+
+  <!-- Avaliações -->
+  <section id="reviews">
+    <h2>Avaliações</h2>
+    <div id="reviewList"></div>
+    <h3>Nova Avaliação</h3>
+    <select id="reviewProduct"><option value="">Selecione o produto</option></select>
+    <input type="number" id="rating" placeholder="Nota (1-5)">
+    <textarea id="comment" placeholder="Comentário"></textarea>
+    <button id="submitReview">Enviar</button>
+  </section>
+
+  <!-- Recomendações -->
+  <section id="recommendations">
+    <h2>Recomendações</h2>
+    <div id="recList"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

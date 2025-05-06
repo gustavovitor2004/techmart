@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Administrativo - TechMart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Painel Administrativo</h1>
+  <nav>
+    <a href="index.html">Loja</a> |
+    <a href="admin.html">Admin</a>
+  </nav>
+  <section id="admin-products">
+    <h2>Produtos</h2>
+    <div id="productList"></div>
+    <h3>Adicionar Produto</h3>
+    <input id="newName" placeholder="Nome">
+    <input id="newCategory" placeholder="Categoria">
+    <input id="newBrand" placeholder="Marca">
+    <input id="newPrice" type="number" placeholder="Preço">
+    <button id="addProduct">Adicionar</button>
+  </section>
+  <section id="admin-orders">
+    <h2>Pedidos</h2>
+    <div id="adminOrderList"></div>
+  </section>
+  <script src="admin.js"></script>
+</body>
+</html>

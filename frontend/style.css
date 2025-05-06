@@ -1,0 +1,127 @@
+/* Tema Escuro e Estilizado */
+:root {
+  --bg-color: #181a1b;
+  --card-bg: #242526;
+  --text-color: #e0e0e0;
+  --accent: #4a90e2;
+  --hover-accent: #357ab8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: var(--accent);
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--hover-accent);
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Form controls */
+input, select, button, textarea {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--accent);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  max-width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+button:hover {
+  background: var(--hover-accent);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Grid layouts */
+#catalog, #cartItems, #orderList, #reviewList, #recList, #productList, #adminOrderList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards */
+.product-card, .cart-card, .order-card, .review-card, .rec-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.product-card:hover, .rec-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Specific adjustments */
+#filters select, #filters input {
+  width: auto;
+  display: inline-block;
+}
+
+#filters button {
+  margin-top: 1.7rem;
+}
+
+.cart-card input[type="number"] {
+  width: 60px;
+}
+
+.cart-card button {
+  margin-top: 0.5rem;
+}
+
+/* Admin panel */
+#admin-products input {
+  max-width: 300px;
+}
+
+#admin-products button {
+  margin-left: 0;
+}
+
+#admin-orders .order-card {
+  grid-template-columns: 1fr;
+}
